@@ -6,27 +6,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Gentlent Developers',
+  tagline: 'Our documentation around APIs and technical infrastructure.',
+  favicon: 'https://s1.gentcdn.com/images/branding/gentlentg/favicon-64.png',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://developers.gentlent.com',
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'gentlent',
+  projectName: 'developers-docs',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -39,17 +31,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/gentlent/developers-docs/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -64,70 +47,83 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Gentlent Developers',
+          src: 'https://s1.gentcdn.com/dynamic/logo?l2=For+Developers+',
+          srcDark: 'https://s1.gentcdn.com/dynamic/logo?l2=For+Developers+&inverted=1',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'mainSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://www.gentlent.com',
+            label: 'Website',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/gentlent',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
         links: [
           {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                html: '<i>Work in Progress</i>',
+                // label: 'Work in Progress',
+                // to: '/docs/intro',
               },
             ],
           },
+          {},
           {
-            title: 'Community',
+            title: 'Legal',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Code of Conduct',
+                href: 'https://www.gentlent.com/policies/code-of-conduct',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Legal Notice',
+                href: 'https://www.gentlent.com/policies/legal-notice',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Privacy Policy',
+                href: 'https://www.gentlent.com/policies/privacy',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'About us',
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                href: 'https://blog.gentlent.com',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Community',
+                href: 'https://community.gentlent.com',
+              },
+              {
+                label: 'Contact us',
+                href: 'https://www.gentlent.com/contact',
+              },
+              {
+                label: 'Gentlent.com',
+                href: 'https://www.gentlent.com',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} by Gentlent and/or its subsidiaries.`,
       },
       prism: {
         theme: lightCodeTheme,
