@@ -29,7 +29,7 @@ POST /sanitizeEmail
 
 #### Example
 
-```curl title="CURL"
+```bash title="CURL"
 curl -X POST "https://www.gentlentapis.com/tools/v1/sanitizeEmail" \
   -H 'Content-Type: application/json' \
   -d '{"email": "JoHn.DoE+RANDOM@YourName.xyz", "format": "json"}'

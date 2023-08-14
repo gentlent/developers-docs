@@ -31,7 +31,7 @@ GET /getFavicon
 
 #### Example
 
-```curl title="CURL"
+```bash title="CURL"
 curl "https://www.gentlentapis.com/tools/v1/getFavicon?url=https://gentlent.com&format=image"
 ```
 

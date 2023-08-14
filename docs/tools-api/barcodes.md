@@ -37,7 +37,7 @@ GET /barcodes
 
 #### Example
 
-```curl title="CURL"
+```bash title="CURL"
 curl "https://www.gentlentapis.com/tools/v1/barcodes?type=qr_code&data=https://www.gentlent.com&scale=3"
 ```
 

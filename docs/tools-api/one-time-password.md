@@ -39,7 +39,7 @@ POST /otp
 
 #### Example
 
-```curl title="CURL"
+```bash title="CURL"
 curl -X POST "https://www.gentlentapis.com/tools/v1/otp" \
   -H 'Content-Type: application/json' \
   -d '{"type": "time_based", "action": "generate"}'
@@ -81,7 +81,7 @@ POST /otp
 
 #### Example
 
-```curl title="CURL"
+```bash title="CURL"
 curl -X POST "https://www.gentlentapis.com/tools/v1/otp" \
   -H 'Content-Type: application/json' \
   -d '{"type": "time_based", "action": "verify", "secret": "FF4HND2CCGPWNZHKIA66I6Y44DEKPXXI"}'

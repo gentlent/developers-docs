@@ -25,7 +25,7 @@ GET /countries
 
 #### Example
 
-```curl title="CURL"
+```bash title="CURL"
 curl "https://www.gentlentapis.com/tools/v1/countries"
 ```
 
