@@ -41,4 +41,4 @@ GET /barcodes
 curl "https://www.gentlentapis.com/tools/v1/barcodes?type=qr_code&data=https://www.gentlent.com&scale=3"
 ```
 
-![](https://www.gentlentapis.com/tools/v1/barcodes?type=qr_code&data=https://www.gentlent.com&scale=3)
+![Example](https://www.gentlentapis.com/tools/v1/barcodes?type=qr_code&data=https://www.gentlent.com&scale=3)
