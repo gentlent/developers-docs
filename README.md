@@ -2,6 +2,8 @@
 
 This is the repository for [our developers documentation](https://developers.gentlent.com). This website is built using [Docusaurus 2](https://docusaurus.io/). Please refer to its documentation for how to edit this repository.
 
+Visit our website at [www.gentlent.com](https://www.gentlent.com).
+
 ### Installation & Local Development
 
 ```
