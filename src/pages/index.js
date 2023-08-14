@@ -28,7 +28,6 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title={`Overview`}
       description="Gentlent's documentation around APIs and technical infrastructure.">
       <HomepageHeader />
       <main>

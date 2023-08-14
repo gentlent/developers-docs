@@ -77,9 +77,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                html: '<i>Work in Progress</i>',
-                // label: 'Work in Progress',
-                // to: '/docs/intro',
+                label: 'Tools API',
+                to: '/docs/tools-api/',
               },
             ],
           },
@@ -128,6 +127,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        // additionalLanguages: ['uri', 'url', 'http', 'json'],
       },
     }),
 };
